@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ar" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تفاصيل المنتج - جوزال</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+      <header class="">
+        <div class="top container">
+            <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Select Country 🌍
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Palestine</a></li>
+                    <li><a class="dropdown-item" href="#">Jordan</a></li>
+                    <li><a class="dropdown-item" href="#">Egypt</a></li>
+                    <li><a class="dropdown-item" href="#">Lebanon</a></li>
+                    <li><a class="dropdown-item" href="#">Syria</a></li>
+                </ul>
+            </div>
+            <div>
+                <div class="input-group">
+                    <button class="search">
+                        <img src="./image/search.svg" alt="">
+                    </button>
+                    <input type="text" class="form-control" aria-label="Text input with segmented dropdown button"
+                        placeholder="Search for watches...">
+                    <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="visually-hidden">Toggle Dropdown</span>
+                    </button>
+                    <button type="button" class="btn btn-outline-secondary">All Watches</button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#">All Watches</a></li>
+                        <li><a class="dropdown-item" href="#">Smart Watches</a></li>
+                        <li><a class="dropdown-item" href="#">Analog Watches</a></li>
+                        <li><a class="dropdown-item" href="#">Digital Watches</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="logo">
+                <img src="./image/logo.png" alt="">
+            </div>
+        </div>
+        <div class="border"></div>
+        <div class="down container">
+            <div class="auth">
+              
+            </div>
+            <nav>
+                <ul class="nav ">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Accessories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <span style="font-size:1.3em; margin-left:8px;">&#9776;</span> Browse Categories
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">smart</a></li>
+                    <li><a class="dropdown-item" href="#">analog</a></li>
+                    <li><a class="dropdown-item" href="#">digital</a></li>
+                    <li><a class="dropdown-item" href="#">accessories</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="border"></div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="product-detail-container">
+                
+                
+                <div class="product-info-detail" dir="rtl">
+                    <h1 id="productName" class="product-name-detail">Elegant Silver</h1>
+                  
+                    
+                    <div class="product-description">
+                        <p>تصميم أنيق فضي مناسب لجميع الأوقات. هذه الساعة تمثل قمة الأناقة والجودة، مع تصميم دقيق يستخدم أفضل المواد للديمومة والراحة. تجمع بين الأصالة والحداثة، مما يجعلها مناسبة لجميع المناسبات، الرسمية أو اليومية. حركة دقيقة وتقنية متقدمة لضمان الدقة، فهي ليست مجرد أداة لمعرفة الوقت، بل قطعة فنية تعبر عن شخصيتك وتكمل مظهرك بالفخامة الكاملة.</p>
+                    </div>
+                  
+                        
+                      <div class="product-actions-detail">
+                         <div class="product-price-detail" id="productPrice">$123.33</div>
+                        <button class="add-to-cart-btn" onclick="addToCartDetail()">
+                            <i class="bi bi-cart-plus"></i>
+                            أضف إلى السلة
+                        </button>
+                      
+                    </div>
+                        
+                      
+                    </div>
+                     
+                      <div class="product-images">
+                    <div class="main-image">
+                        <img id="mainProductImage" src="./image/Mask Group 22.png" alt="صورة المنتج">
+                    </div>
+                    <div class="thumbnail-images">
+                        <img src="./image/Mask Group 22.png" alt="صورة 1" onclick="changeMainImage(this.src)">
+                        <img src="./image/Mask Group 19.png" alt="صورة 2" onclick="changeMainImage(this.src)">
+                        <img src="./image/Mask Group 20.png" alt="صورة 3" onclick="changeMainImage(this.src)">
+                    </div>
+                </div>
+                    
+                    <div class="product-features" dir="rtl">
+                        <h3>مميزات المنتج:</h3>
+                        <ul>
+                            <li>مقاومة للماء حتى 50 متر</li>
+                            <li>زجاج كريستال سافير</li>
+                            <li>حركة أوتوماتيكية</li>
+                            <li>ضمان 3 سنوات</li>
+                            <li>شحن مجاني</li>
+                        </ul>
+                    </div>
+
+                 
+                </div>
+
+                
+
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid" dir="rtl">
+            <div class="footer-brand">
+                <h3 class="brand-name">Jozal</h3>
+                <p class="brand-desc">ساعات جوزال تجمع بين الأناقة والدقة في التصميم، لتكون خيارك الأمثل في كل مناسبة. نقدم تشكيلة حصرية تلبي مختلف الأذواق مع ضمان جودة استثنائية وخدمة عملاء مميزة.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="X" class="social-item"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#" aria-label="Instagram" class="social-item"><i class="bi bi-instagram"></i></a>
+                    <a href="#" aria-label="Facebook" class="social-item"><i class="bi bi-facebook"></i></a>
+                    <a href="#" aria-label="WhatsApp" class="social-item"><i class="bi bi-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-heading">منتجاتنا</h4>
+                <ul class="footer-list">
+                    <li><a href="#">ساعات رجالية</a></li>
+                    <li><a href="#">ساعات نسائية</a></li>
+                    <li><a href="#">ساعات رياضية</a></li>
+                    <li><a href="#">ساعات محدودة</a></li>
+                    <li><a href="#">عروض حصرية</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-heading">روابط سريعة</h4>
+                <ul class="footer-list">
+                    <li><a href="#">حسابي الشخصي</a></li>
+                    <li><a href="#">سياسة الإرجاع والتبديل</a></li>
+                    <li><a href="#">الشحن والتوصيل</a></li>
+                    <li><a href="#">تتبع الشحنة</a></li>
+                    <li><a href="#">سجل المشتريات</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-heading">خدماتنا</h4>
+                <ul class="footer-list">
+                    <li><a href="#">مركز الدعم</a></li>
+                    <li><a href="#">الشروط والأحكام</a></li>
+                    <li><a href="#">سياسة الخصوصية</a></li>
+                    <li><a href="#">المساعدة</a></li>
+                    <li><a href="#">الأسئلة الشائعة</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <script src="auth.js"></script>
+    <script>
+        // التحقق من تسجيل الدخول
+        if (!userManager.isLoggedIn()) {
+            window.location.href = 'login.html';
+        }
+
+        // تحديث واجهة المستخدم
+        updateUI();
+
+        // قراءة بيانات المنتج من URL
+        function getProductDataFromURL() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const name = urlParams.get('name');
+            const price = urlParams.get('price');
+            
+            if (name && price) {
+                document.getElementById('productName').textContent = name;
+                document.getElementById('productPrice').textContent = `$ ${price}`;
+            }
+        }
+
+        // استدعاء الدالة عند تحميل الصفحة
+        getProductDataFromURL();
+
+        // دوال إدارة المنتج
+        function changeMainImage(src) {
+            document.getElementById('mainProductImage').src = src;
+        }
+
+        function changeQuantity(delta) {
+            const quantityElement = document.getElementById('quantity');
+            let currentQuantity = parseInt(quantityElement.textContent);
+            currentQuantity = Math.max(1, currentQuantity + delta);
+            quantityElement.textContent = currentQuantity;
+        }
+
+        function addToCartDetail() {
+            const name = document.getElementById('productName').textContent;
+            const price = parseFloat(document.getElementById('productPrice').textContent.replace('$', '').trim());
+            const quantityElement = document.getElementById('quantity');
+            const quantity = quantityElement ? parseInt(quantityElement.textContent) || 1 : 1;
+            
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cart.push({ name, price, quantity });
+            localStorage.setItem('cart', JSON.stringify(cart));
+            
+            // الانتقال مباشرة إلى صفحة السلة بعد الإضافة
+            window.location.href = 'cart.html';
+        }
+
+        function addToWishlist() {
+            const name = document.getElementById('productName').textContent;
+            let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+            
+            if (!wishlist.find(item => item.name === name)) {
+                wishlist.push({ name, addedAt: new Date() });
+                localStorage.setItem('wishlist', JSON.stringify(wishlist));
+                alert(`تم إضافة ${name} إلى المفضلة`);
+            } else {
+                alert(`${name} موجود بالفعل في المفضلة`);
+            }
+        }
+
+        // إدارة خيارات اللون والحجم
+        document.querySelectorAll('.color-option').forEach(option => {
+            option.addEventListener('click', function() {
+                document.querySelectorAll('.color-option').forEach(opt => opt.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+
+        document.querySelectorAll('.size-option').forEach(option => {
+            option.addEventListener('click', function() {
+                document.querySelectorAll('.size-option').forEach(opt => opt.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>

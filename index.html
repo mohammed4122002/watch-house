@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="ar" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جوزال - متجر الساعات</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header class="">
+        <div class="top container">
+            <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Select Country 🌍
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Palestine</a></li>
+                    <li><a class="dropdown-item" href="#">Jordan</a></li>
+                    <li><a class="dropdown-item" href="#">Egypt</a></li>
+                    <li><a class="dropdown-item" href="#">Lebanon</a></li>
+                    <li><a class="dropdown-item" href="#">Syria</a></li>
+                </ul>
+            </div>
+            <div>
+                <div class="input-group">
+                    <button class="search">
+                        <img src="./image/search.svg" alt="">
+                    </button>
+                    <input type="text" class="form-control" aria-label="Text input with segmented dropdown button"
+                        placeholder="Search for watches...">
+                    <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="visually-hidden">Toggle Dropdown</span>
+                    </button>
+                    <button type="button" class="btn btn-outline-secondary">All Watches</button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#">All Watches</a></li>
+                        <li><a class="dropdown-item" href="#">Smart Watches</a></li>
+                        <li><a class="dropdown-item" href="#">Analog Watches</a></li>
+                        <li><a class="dropdown-item" href="#">Digital Watches</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="logo">
+                <img src="./image/logo.png" alt="">
+            </div>
+        </div>
+        <div class="border"></div>
+        <div class="down container">
+            <div class="auth">
+              
+            </div>
+            <nav>
+                <ul class="nav ">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Accessories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <span style="font-size:1.3em; margin-left:8px;">&#9776;</span> Browse Categories
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">smart</a></li>
+                    <li><a class="dropdown-item" href="#">analog</a></li>
+                    <li><a class="dropdown-item" href="#">digital</a></li>
+                    <li><a class="dropdown-item" href="#">accessories</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="border"></div>
+    </header>
+
+    <main>
+        <section class="container">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./image/1.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./image/1.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./image/1.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <section class="container distinction">
+            <img src="./image/dis.jpg" alt="">
+        </section>
+        <section class="container ">
+            <h2 class="product-title">ساعاتنا</h2>
+        <div class="row-products-filter">
+
+
+
+            <div class="products-container">
+                <div class="products-section">
+                    <div class="products-grid">
+                <div class="product-card" onclick="viewProduct('Vintage Brown', 250)">
+                    <div class="product-image" style="background-image: url('./image/Mask\ Group\ 19.png'); background-size: cover; background-position: center;">
+                        <div class="product-actions">
+                            <button class="action-btn">❤️</button>
+                            <button class="action-btn" onclick="addToCart('Vintage Brown', 250)">🛒</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Vintage Brown</h3>
+                        <div class="product-price">$ 250.00</div>
+                    </div>
+                </div>
+                <div class="product-card" onclick="viewProduct('Minimalist White', 120)">
+                    <div class="product-image" style="background-image: url('./image/Mask\ Group\ 20.png'); background-size: cover; background-position: center;">
+                        <div class="product-actions">
+                            <button class="action-btn">❤️</button>
+                            <button class="action-btn" onclick="addToCart('Minimalist White', 120)">🛒</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Minimalist White</h3>
+                        <div class="product-price">$ 120.00</div>
+                    </div>
+                </div>
+                <div class="product-card" onclick="viewProduct('Sporty Black', 79)">
+                    <div class="product-image" style="background-image: url('./image/Mask\ Group\ 21.png'); background-size: cover; background-position: center;">
+                        <div class="product-actions">
+                            <button class="action-btn">❤️</button>
+                            <button class="action-btn" onclick="addToCart('Sporty Black', 79)">🛒</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Sporty Black</h3>
+                        <div class="product-price">$ 79.00</div>
+                    </div>
+                </div>
+                <div class="product-card" onclick="viewProduct('Elegant Silver', 149.50)">
+                    <div class="product-image" style="background-image: url('./image/Mask\ Group\ 22.png'); background-size: cover; background-position: center;">
+                        <div class="product-actions">
+                            <button class="action-btn">❤️</button>
+                            <button class="action-btn" onclick="addToCart('Elegant Silver', 149.50)">🛒</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Elegant Silver</h3>
+                        <div class="product-price">$ 149.50</div>
+                    </div>
+                </div>
+                <div class="product-card" onclick="viewProduct('Classic Gold', 199)">
+                    <div class="product-image" style="background-image: url('./image/Mask\ Group\ 23.png'); background-size: cover; background-position: center;">
+                        <div class="product-actions">
+                            <button class="action-btn">❤️</button>
+                            <button class="action-btn" onclick="addToCart('Classic Gold', 199)">🛒</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Classic Gold</h3>
+                        <div class="product-price">$ 199.00</div>
+                    </div>
+                </div>
+                <div class="product-card" onclick="viewProduct('Modern Blue', 89)">
+                    <div class="product-image" style="background-image: url('./image/Mask\ Group\ 24.png'); background-size: cover; background-position: center;">
+                        <div class="product-actions">
+                            <button class="action-btn">❤️</button>
+                            <button class="action-btn" onclick="addToCart('Modern Blue', 89)">🛒</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Modern Blue</h3>
+                        <div class="product-price">$ 89.00</div>
+                    </div>
+                </div>
+                <div class="product-card" onclick="viewProduct('Premium Steel', 299)">
+                    <div class="product-image" style="background-image: url('./image/Mask\ Group\ 20.png'); background-size: cover; background-position: center;">
+                        <div class="product-actions">
+                            <button class="action-btn">❤️</button>
+                            <button class="action-btn" onclick="addToCart('Premium Steel', 299)">🛒</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Premium Steel</h3>
+                        <div class="product-price">$ 299.00</div>
+                    </div>
+                </div>
+                <div class="product-card" onclick="viewProduct('Luxury Diamond', 599)">
+                    <div class="product-image" style="background-image: url('./image/Mask\ Group\ 19.png'); background-size: cover; background-position: center;">
+                        <div class="product-actions">
+                            <button class="action-btn">❤️</button>
+                            <button class="action-btn" onclick="addToCart('Luxury Diamond', 599)">🛒</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Luxury Diamond</h3>
+                        <div class="product-price">$ 599.00</div>
+                    </div>
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+            
+            <!-- Product Filtering Sidebar -->
+            <div class="filter-sidebar">
+                        <h3 class="filter-title">تصفية المنتجات</h3>
+                        
+                        <!-- Color Filter -->
+                        <div class="filter-section">
+                            <h4 class="filter-heading">اللون</h4>
+                            <div class="filter-options">
+                                <label class="filter-checkbox">
+                                    <input type="checkbox" value="black" class="color-filter">
+                                    <span class="checkmark"></span>
+                                    أسود
+                                </label>
+                                <label class="filter-checkbox">
+                                    <input type="checkbox" value="white" class="color-filter">
+                                    <span class="checkmark"></span>
+                                    أبيض
+                                </label>
+                                <label class="filter-checkbox">
+                                    <input type="checkbox" value="silver" class="color-filter">
+                                    <span class="checkmark"></span>
+                                    فضي
+                                </label>
+                                <label class="filter-checkbox">
+                                    <input type="checkbox" value="gold" class="color-filter">
+                                    <span class="checkmark"></span>
+                                    ذهبي
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <!-- Price Filter -->
+                        <div class="filter-section">
+                            <h4 class="filter-heading">السعر</h4>
+                            <div class="price-range">
+                                <input type="range" id="priceRange" min="0" max="500" value="500" class="price-slider">
+                                <div class="price-values">
+                                    <span>$0</span>
+                                    <span id="currentPrice">$500</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Brand Filter -->
+                        <div class="filter-section">
+                            <h4 class="filter-heading">الماركة</h4>
+                            <div class="filter-options">
+                                <label class="filter-checkbox">
+                                    <input type="checkbox" value="rolex" class="brand-filter">
+                                    <span class="checkmark"></span>
+                                    Rolex
+                                </label>
+                                <label class="filter-checkbox">
+                                    <input type="checkbox" value="fossil" class="brand-filter">
+                                    <span class="checkmark"></span>
+                                    Fossil
+                                </label>
+                                <label class="filter-checkbox">
+                                    <input type="checkbox" value="casio" class="brand-filter">
+                                    <span class="checkmark"></span>
+                                    Casio
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <!-- Collection Filter -->
+                        <div class="filter-section">
+                            <h4 class="filter-heading">المجموعة</h4>
+                            <div class="filter-options">
+                                <label class="filter-checkbox">
+                                    <input type="checkbox" value="new" class="collection-filter">
+                                    <span class="checkmark"></span>
+                                    جديد
+                                </label>
+                                <label class="filter-checkbox">
+                                    <input type="checkbox" value="discounts" class="collection-filter">
+                                    <span class="checkmark"></span>
+                                    تخفيضات
+                                </label>
+                                <label class="filter-checkbox">
+                                    <input type="checkbox" value="limited" class="collection-filter">
+                                    <span class="checkmark"></span>
+                                    إصدار محدود
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <!-- Clear Filters Button -->
+                        <button class="clear-filters-btn" onclick="clearAllFilters()">مسح الفلاتر</button>
+                    </div>
+                    </div>
+            </div>
+        </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid" dir="rtl">
+            <div class="footer-brand">
+                <h3 class="brand-name">Jozal</h3>
+                <p class="brand-desc">ساعات جوزال تجمع بين الأناقة والدقة في التصميم، لتكون خيارك الأمثل في كل مناسبة. نقدم تشكيلة حصرية تلبي مختلف الأذواق مع ضمان جودة استثنائية وخدمة عملاء مميزة.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="X" class="social-item"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#" aria-label="Instagram" class="social-item"><i class="bi bi-instagram"></i></a>
+                    <a href="#" aria-label="Facebook" class="social-item"><i class="bi bi-facebook"></i></a>
+                    <a href="#" aria-label="WhatsApp" class="social-item"><i class="bi bi-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-heading">منتجاتنا</h4>
+                <ul class="footer-list">
+                    <li><a href="#">ساعات رجالية</a></li>
+                    <li><a href="#">ساعات نسائية</a></li>
+                    <li><a href="#">ساعات رياضية</a></li>
+                    <li><a href="#">ساعات محدودة</a></li>
+                    <li><a href="#">عروض حصرية</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-heading">روابط سريعة</h4>
+                <ul class="footer-list">
+                    <li><a href="#">حسابي الشخصي</a></li>
+                    <li><a href="#">سياسة الإرجاع والتبديل</a></li>
+                    <li><a href="#">الشحن والتوصيل</a></li>
+                    <li><a href="#">تتبع الشحنة</a></li>
+                    <li><a href="#">سجل المشتريات</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-heading">خدماتنا</h4>
+                <ul class="footer-list">
+                    <li><a href="#">مركز الدعم</a></li>
+                    <li><a href="#">الشروط والأحكام</a></li>
+                    <li><a href="#">سياسة الخصوصية</a></li>
+                    <li><a href="#">المساعدة</a></li>
+                    <li><a href="#">الأسئلة الشائعة</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS & Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <script src="auth.js"></script>
+    <script>
+      
+        // دوال التصفية
+        function clearAllFilters() {
+            // إعادة تعيين جميع الفلاتر
+            document.querySelectorAll('.filter-checkbox input').forEach(checkbox => {
+                checkbox.checked = false;
+            });
+            document.getElementById('priceRange').value = 500;
+            document.getElementById('currentPrice').textContent = '$500';
+            
+            // إظهار جميع المنتجات
+            filterProducts();
+        }
+
+        function filterProducts() {
+            const selectedColors = Array.from(document.querySelectorAll('.color-filter:checked')).map(cb => cb.value);
+            const selectedBrands = Array.from(document.querySelectorAll('.brand-filter:checked')).map(cb => cb.value);
+            const selectedCollections = Array.from(document.querySelectorAll('.collection-filter:checked')).map(cb => cb.value);
+            const maxPrice = parseInt(document.getElementById('priceRange').value);
+            
+            const productCards = document.querySelectorAll('.product-card');
+            
+            productCards.forEach(card => {
+                let showProduct = true;
+                
+                // فلترة حسب السعر
+                const priceText = card.querySelector('.product-price').textContent;
+                const price = parseFloat(priceText.replace('$', '').trim());
+                if (price > maxPrice) {
+                    showProduct = false;
+                }
+                
+                // فلترة حسب اللون (يمكن إضافة منطق أكثر تعقيداً هنا)
+                if (selectedColors.length > 0) {
+                    // هذا مثال بسيط - يمكن تطويره حسب احتياجاتك
+                    const productName = card.querySelector('.product-name').textContent.toLowerCase();
+                    const hasMatchingColor = selectedColors.some(color => {
+                        if (color === 'black' && productName.includes('black')) return true;
+                        if (color === 'white' && productName.includes('white')) return true;
+                        if (color === 'silver' && productName.includes('silver')) return true;
+                        if (color === 'gold' && productName.includes('gold')) return true;
+                        return false;
+                    });
+                    if (!hasMatchingColor) showProduct = false;
+                }
+                
+                // فلترة حسب الماركة (يمكن إضافة منطق أكثر تعقيداً هنا)
+                if (selectedBrands.length > 0) {
+                    // هذا مثال بسيط - يمكن تطويره حسب احتياجاتك
+                    showProduct = true; // مؤقتاً
+                }
+                
+                // فلترة حسب المجموعة (يمكن إضافة منطق أكثر تعقيداً هنا)
+                if (selectedCollections.length > 0) {
+                    // هذا مثال بسيط - يمكن تطويره حسب احتياجاتك
+                    showProduct = true; // مؤقتاً
+                }
+                
+                card.style.display = showProduct ? 'block' : 'none';
+            });
+        }
+
+        // إضافة مستمعي الأحداث للفلاتر
+        document.addEventListener('DOMContentLoaded', function() {
+            // مستمع لفلتر السعر
+            const priceRange = document.getElementById('priceRange');
+            if (priceRange) {
+                priceRange.addEventListener('input', function() {
+                    document.getElementById('currentPrice').textContent = '$' + this.value;
+                    filterProducts();
+                });
+            }
+            
+            // مستمعي أحداث للفلاتر الأخرى
+            document.querySelectorAll('.color-filter, .brand-filter, .collection-filter').forEach(checkbox => {
+                checkbox.addEventListener('change', filterProducts);
+            });
+        });
+
+        // دوال إدارة المنتجات
+        function viewProduct(name, price) {
+            if (!userManager.isLoggedIn()) {
+                alert('يجب تسجيل الدخول لعرض تفاصيل المنتج');
+                window.location.href = 'login.html';
+                return;
+            }
+            
+            // انتقال لصفحة المنتج الفردي
+            window.location.href = `product.html?name=${encodeURIComponent(name)}&price=${price}`;
+        }
+
+        function addToCart(name, price) {
+            if (!userManager.isLoggedIn()) {
+                alert('يجب تسجيل الدخول لإضافة المنتج للسلة');
+                window.location.href = 'login.html';
+                return;
+            }
+            
+           
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cart.push({ name, price, quantity: 1 });
+            localStorage.setItem('cart', JSON.stringify(cart));
+            // الانتقال مباشرة إلى صفحة السلة بعد الإضافة
+            window.location.href = 'cart.html';
+        }
+
+      
+        document.addEventListener('click', function(e) {
+            if (e.target.classList.contains('action-btn')) {
+                e.stopPropagation();
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ar" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>الدفع - جوزال</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+</head>
+<body>
+  <header class="">
+        <div class="top container">
+            <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Select Country 🌍
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Palestine</a></li>
+                    <li><a class="dropdown-item" href="#">Jordan</a></li>
+                    <li><a class="dropdown-item" href="#">Egypt</a></li>
+                    <li><a class="dropdown-item" href="#">Lebanon</a></li>
+                    <li><a class="dropdown-item" href="#">Syria</a></li>
+                </ul>
+            </div>
+            <div>
+                <div class="input-group">
+                    <button class="search">
+                        <img src="./image/search.svg" alt="">
+                    </button>
+                    <input type="text" class="form-control" aria-label="Text input with segmented dropdown button"
+                        placeholder="Search for watches...">
+                    <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="visually-hidden">Toggle Dropdown</span>
+                    </button>
+                    <button type="button" class="btn btn-outline-secondary">All Watches</button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#">All Watches</a></li>
+                        <li><a class="dropdown-item" href="#">Smart Watches</a></li>
+                        <li><a class="dropdown-item" href="#">Analog Watches</a></li>
+                        <li><a class="dropdown-item" href="#">Digital Watches</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="logo">
+                <img src="./image/logo.png" alt="">
+            </div>
+        </div>
+        <div class="border"></div>
+        <div class="down container">
+            <div class="auth">
+              
+            </div>
+            <nav>
+                <ul class="nav ">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Accessories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <span style="font-size:1.3em; margin-left:8px;">&#9776;</span> Browse Categories
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">smart</a></li>
+                    <li><a class="dropdown-item" href="#">analog</a></li>
+                    <li><a class="dropdown-item" href="#">digital</a></li>
+                    <li><a class="dropdown-item" href="#">accessories</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="border"></div>
+    </header>
+  
+  <main class="container cart-page" dir="rtl">
+    <h2 class="cart-title">تفاصيل الشحن والدفع <span>📦</span></h2>
+
+    <form id="checkoutForm" class="vstack gap-3" style="max-width: 600px; margin: 0 auto;">
+      <div>
+        <label class="form-label text-white">الاسم الكامل</label>
+        <input id="fullName" class="form-control" placeholder="الاسم الكامل" required />
+      </div>
+      <div>
+        <label class="form-label text-white">رقم الهاتف</label>
+        <input id="phone" class="form-control" placeholder="05xxxxxxxx" required />
+      </div>
+      <div>
+        <label class="form-label text-white">العنوان</label>
+        <input id="address" class="form-control" placeholder="المدينة - الشارع - المبنى" required />
+      </div>
+      <button class="checkout-btn" type="submit">تأكيد الطلب والدفع</button>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid" dir="rtl">
+      <div class="footer-brand">
+        <h3 class="brand-name">Jozal</h3>
+        <p class="brand-desc">ساعات جوزال تجمع بين الأناقة والدقة في التصميم.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+  <script src="auth.js"></script>
+  <script>
+    // إجبار تسجيل الدخول
+    if (!checkAuth()) {
+      // سيعيد التوجيه إذا لم يكن مسجلاً
+    }
+
+    updateUI();
+
+    // تعبئة من بيانات المستخدم إن وُجدت
+    const user = userManager.getCurrentUser();
+    if (user) {
+      document.getElementById('fullName').value = user.fullname || '';
+    }
+
+    // معالجة الطلب
+    document.getElementById('checkoutForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const fullName = document.getElementById('fullName').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const address = document.getElementById('address').value.trim();
+
+      const cart = JSON.parse(localStorage.getItem('cart')) || [];
+      if (cart.length === 0) {
+        alert('السلة فارغة.');
+        window.location.href = 'index.html';
+        return;
+      }
+
+      const order = {
+        id: Date.now(),
+        userId: user ? user.id : null,
+        fullName,
+        phone,
+        address,
+        items: cart,
+        total: cart.reduce((sum, it) => sum + (it.price || 0) * (it.quantity || 1), 0),
+        createdAt: new Date().toISOString()
+      };
+
+      const orders = JSON.parse(localStorage.getItem('orders')) || [];
+      orders.push(order);
+      localStorage.setItem('orders', JSON.stringify(orders));
+
+      // تفريغ السلة
+      localStorage.setItem('cart', JSON.stringify([]));
+
+      window.location.href = 'success.html';
+    });
+  </script>
+</body>
+</html>
+
+
