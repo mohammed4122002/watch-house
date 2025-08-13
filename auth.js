@@ -123,12 +123,12 @@ function updateUI() {
             authSection.innerHTML = `
                 <div class="user-info">
                     <span>مرحباً، ${currentUser.username}</span>
-                    <button class="btn" onclick="logout()">تسجيل الخروج</button>
+                    <button class="btn" onclick="logout()">logout </button>
                 </div>
             `;
         } else {
             authSection.innerHTML = `
-                <button class="btn" type="button" onclick="window.location.href='login.html'">تسجيل الدخول</button>
+                <button class="btn" type="button" onclick="window.location.href='login.html'">login </button>
             `;
         }
     }

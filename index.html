@@ -137,7 +137,7 @@
                             <button class="action-btn" onclick="addToCart('Vintage Brown', 250)">🛒</button>
                         </div>
                     </div>
-                    <div class="product-info">
+                    <div class="product-info" >
                         <h3 class="product-name">Vintage Brown</h3>
                         <div class="product-price">$ 250.00</div>
                     </div>
@@ -232,7 +232,7 @@
             </div>
             
             <!-- Product Filtering Sidebar -->
-            <div class="filter-sidebar">
+            <div class="filter-sidebar" dir="rtl">
                         <h3 class="filter-title">تصفية المنتجات</h3>
                         
                         <!-- Color Filter -->
@@ -319,7 +319,7 @@
                         </div>
                         
                         <!-- Clear Filters Button -->
-                        <button class="clear-filters-btn" onclick="clearAllFilters()">مسح الفلاتر</button>
+                        <button class="clear-filters-btn">مسح الفلاتر</button>
                     </div>
                     </div>
             </div>
@@ -379,87 +379,9 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
     <script src="auth.js"></script>
-    <script>
+   
+ <script>
       
-        // دوال التصفية
-        function clearAllFilters() {
-            // إعادة تعيين جميع الفلاتر
-            document.querySelectorAll('.filter-checkbox input').forEach(checkbox => {
-                checkbox.checked = false;
-            });
-            document.getElementById('priceRange').value = 500;
-            document.getElementById('currentPrice').textContent = '$500';
-            
-            // إظهار جميع المنتجات
-            filterProducts();
-        }
-
-        function filterProducts() {
-            const selectedColors = Array.from(document.querySelectorAll('.color-filter:checked')).map(cb => cb.value);
-            const selectedBrands = Array.from(document.querySelectorAll('.brand-filter:checked')).map(cb => cb.value);
-            const selectedCollections = Array.from(document.querySelectorAll('.collection-filter:checked')).map(cb => cb.value);
-            const maxPrice = parseInt(document.getElementById('priceRange').value);
-            
-            const productCards = document.querySelectorAll('.product-card');
-            
-            productCards.forEach(card => {
-                let showProduct = true;
-                
-                // فلترة حسب السعر
-                const priceText = card.querySelector('.product-price').textContent;
-                const price = parseFloat(priceText.replace('$', '').trim());
-                if (price > maxPrice) {
-                    showProduct = false;
-                }
-                
-                // فلترة حسب اللون (يمكن إضافة منطق أكثر تعقيداً هنا)
-                if (selectedColors.length > 0) {
-                    // هذا مثال بسيط - يمكن تطويره حسب احتياجاتك
-                    const productName = card.querySelector('.product-name').textContent.toLowerCase();
-                    const hasMatchingColor = selectedColors.some(color => {
-                        if (color === 'black' && productName.includes('black')) return true;
-                        if (color === 'white' && productName.includes('white')) return true;
-                        if (color === 'silver' && productName.includes('silver')) return true;
-                        if (color === 'gold' && productName.includes('gold')) return true;
-                        return false;
-                    });
-                    if (!hasMatchingColor) showProduct = false;
-                }
-                
-                // فلترة حسب الماركة (يمكن إضافة منطق أكثر تعقيداً هنا)
-                if (selectedBrands.length > 0) {
-                    // هذا مثال بسيط - يمكن تطويره حسب احتياجاتك
-                    showProduct = true; // مؤقتاً
-                }
-                
-                // فلترة حسب المجموعة (يمكن إضافة منطق أكثر تعقيداً هنا)
-                if (selectedCollections.length > 0) {
-                    // هذا مثال بسيط - يمكن تطويره حسب احتياجاتك
-                    showProduct = true; // مؤقتاً
-                }
-                
-                card.style.display = showProduct ? 'block' : 'none';
-            });
-        }
-
-        // إضافة مستمعي الأحداث للفلاتر
-        document.addEventListener('DOMContentLoaded', function() {
-            // مستمع لفلتر السعر
-            const priceRange = document.getElementById('priceRange');
-            if (priceRange) {
-                priceRange.addEventListener('input', function() {
-                    document.getElementById('currentPrice').textContent = '$' + this.value;
-                    filterProducts();
-                });
-            }
-            
-            // مستمعي أحداث للفلاتر الأخرى
-            document.querySelectorAll('.color-filter, .brand-filter, .collection-filter').forEach(checkbox => {
-                checkbox.addEventListener('change', filterProducts);
-            });
-        });
-
-        // دوال إدارة المنتجات
         function viewProduct(name, price) {
             if (!userManager.isLoggedIn()) {
                 alert('يجب تسجيل الدخول لعرض تفاصيل المنتج');
@@ -467,7 +389,7 @@
                 return;
             }
             
-            // انتقال لصفحة المنتج الفردي
+           
             window.location.href = `product.html?name=${encodeURIComponent(name)}&price=${price}`;
         }
 
